@@ -1,0 +1,17 @@
+matplotlib
+nengo
+nengo-loihi
+numpy
+scikit-learn
+scipy
+
+# for debug:
+deepdiff
+incense
+ipympl
+ipywidgets
+jupyterlab
+mailjet_rest
+pymongo
+rosbags
+# sacred  # required by incense

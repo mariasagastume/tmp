@@ -1,0 +1,45 @@
+pdf.fonttype: 42
+ps.fonttype: 42
+font.family: GNU FreeSans
+# text.usetex: True
+# font.family: Helvetica
+font.size: 9.5  # matched with report font size
+
+axes.linewidth: 0.8
+# axes.spines.right: False
+# axes.spines.top: False
+
+# grid.linewidth: 0.8
+
+legend.frameon: False
+legend.numpoints: 1
+legend.scatterpoints: 1
+
+lines.linewidth: 1.4
+lines.markeredgewidth: 0
+lines.markersize: 2
+lines.solid_capstyle: round
+
+patch.linewidth: 0.8
+
+# xtick.direction: in
+xtick.major.pad: 2
+xtick.major.size: 2.8
+# xtick.major.top: True
+xtick.major.width: 0.8
+xtick.minor.size: 2
+# xtick.minor.top: True
+# xtick.minor.visible: True
+xtick.minor.width: 0.8
+# xtick.top: True
+
+# ytick.direction: in
+ytick.major.pad: 2
+# ytick.major.right: True
+ytick.major.size: 2.8
+ytick.major.width: 0.8
+# ytick.minor.right: True
+# ytick.minor.size: 2
+# ytick.minor.visible: True
+# ytick.minor.width: 0.8
+# ytick.right: True

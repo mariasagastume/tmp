@@ -1,0 +1,32 @@
+pdf.fonttype: 42
+ps.fonttype: 42
+font.family: GNU FreeSans
+font.size: 7.5
+
+axes.labelpad: 3  # missing in regular.mplstyle
+axes.linewidth: 0.6
+
+# xtick.labelsize: 5
+xtick.major.pad: 1
+xtick.major.size: 1.2
+xtick.major.width: 0.6
+# xtick.minor.size: 1
+# xtick.minor.width: 0.6
+
+# ytick.labelsize: 5
+ytick.major.pad: 1
+ytick.major.size: 1.2
+ytick.major.width: 0.6
+
+# legend.borderaxespad: 0
+legend.borderpad: 0
+legend.frameon: False
+legend.numpoints: 1
+legend.scatterpoints: 1
+
+lines.linewidth: 0.6
+lines.markeredgewidth: 0
+lines.markersize: 2
+lines.solid_capstyle: round
+
+patch.linewidth: 0.6
