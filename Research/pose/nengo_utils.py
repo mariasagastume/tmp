@@ -493,10 +493,12 @@ def get_attractor_network(
                 label='attractor_dynamics')
         else:
             net.rec_con = nengo.Connection(
-                net.attractor_ens.neurons,
-                net.attractor_ens.neurons,
-                # transform=rec_con_weights,
-                transform=nengo.Sparse(rec_con_weights.shape, init=rec_con_weights),
+                net.attractor_ens,
+                net.attractor_ens,
+                solver=nengo.solvers.LstsqL2(weights=True),
+                #net.attractor_ens.neurons,
+                #net.attractor_ens.neurons,
+                #transform=nengo.Sparse(rec_con_weights.shape, init=rec_con_weights),
                 synapse=tau,
                 label='attractor_dynamics')
 
