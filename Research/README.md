@@ -19,7 +19,7 @@ from exp import ex
 # Run the simulation. Specify duration, input commands, and enable the Nengo Loihi backend. All
 # other parameters get default values as defined in `exp.default_config`.
 ex.run(config_updates={
-    'simulation_duration': 5.7,
+    'simulation_duration': 5.0,
     'input': [{  # Initialize a pose estimate, specified in reciprocal grid coordinates.
         'duration': 0.2,
         'cmds': [{'cmd': 'input_freq',
@@ -27,7 +27,7 @@ ex.run(config_updates={
     }, {  # Short period of no movement to allow the attractor network reach a stable state.
         'duration': 0.5,
         'cmds': [{'cmd': 'manual',
-                    'shift_inhib': 1,
+                    'shift_inhib': 0,
                     'pos_rot_shift_inhib': 1,
                     'neg_rot_shift_inhib': 1}]
     }, {  # Constant tangential velocity input of 0.5, angular velocity input of 0.
