@@ -15,3 +15,4 @@ mailjet_rest
 pymongo
 rosbags
 # sacred  # required by incense
+#pip install SciPy==1.10.1 !! 
