@@ -45,7 +45,12 @@ from pose.typing import GridShape
 
 logger = logging.getLogger(__name__)
 
+decoders=None
 
+@property
+def decoders():
+    return  decoders
+    
 def run_experiment(
     _config: dict
 ) -> dict:
@@ -182,6 +187,9 @@ def run_experiment(
     for key in probe_dict:
         if probe_dict[key] is not None:
             data[key] = sim.data[probe_dict[key]]
+            
+    global decoders
+    decoders = sim.data[pose_network.attractor_network.rec_con].weights.copy()
 
     return data
 
